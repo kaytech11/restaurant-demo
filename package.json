@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-demo",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build",
+    "start": "node server/index.js",
+    "seed": "node -e \"import('./server/seed.js').then(m=>m.seed(true)).then(()=>process.exit())\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0"
+  }
+}
