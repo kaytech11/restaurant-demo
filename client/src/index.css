@@ -1,47 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body { @apply bg-stone-50 font-sans text-stone-900 antialiased; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-accent-500; }
-}
-
-/* Shared building blocks: change the look of the whole app from here */
-/* @layer components {
-  .btn {
-    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition disabled:opacity-50;
-  }
-
-  .btn-primary {
-    @apply btn bg-brand-600 text-white hover:bg-brand-700;
-  }
-
-  .btn-ghost {
-    @apply btn border border-stone-300 bg-white text-stone-700 hover:bg-stone-100;
-  }
-
-  .input {
-    @apply w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-brand-500;
-  }
-
-  .card {
-    @apply rounded-xl border border-stone-200 bg-white shadow-sm;
-  }
-
-  .pill {
-    @apply rounded-full border px-4 py-1.5 text-sm font-medium transition;
-  }
-
-  .pill-on {
-    @apply pill border-brand-600 bg-brand-600 text-white;
-  }
-
-  .pill-off {
-    @apply pill border-stone-300 bg-white text-stone-700 hover:border-brand-500;
-  }
-} */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,6 +7,7 @@
   html {
     scroll-behavior: smooth;
   }
+
 
   body {
     @apply bg-stone-50 font-sans text-stone-900 antialiased;

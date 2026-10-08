@@ -25,7 +25,7 @@ export default function DishCard({ dish, qty, onChange }) {
               <button className="h-8 w-8 rounded-full bg-brand-600 text-white" onClick={() => onChange(dish.id, 1)} aria-label={`Add one ${dish.name}`}>+</button>
             </span>
           ) : (
-            <button className="btn-primary py-1.5" onClick={() => onChange(dish.id, 1)}>Add for pickup</button>
+            <button className="btn-primary py-1.5" onClick={() => onChange(dish.id, 1)}>order</button>
           )}
         </div>
       </div>
